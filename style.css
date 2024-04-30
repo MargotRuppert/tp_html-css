@@ -13,7 +13,6 @@ body {
 
 /* NAVBAR */
 header {
-    width: 100%;
     background: rgb(0, 212, 255);
     background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(255, 179, 232, 1) 50%, rgba(242, 252, 69, 1) 100%);
     color: aliceblue;
@@ -25,7 +24,7 @@ header {
 .navBarList {
     display: grid;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -140,6 +139,14 @@ footer a:hover {
     flex-wrap: wrap;
 }
 
+.titre-galerie{
+    text-align: center;
+    font-size: 50px;
+    color: blueviolet;
+    text-shadow: 2px 2px 1px black;
+    font-family: fantasy;
+}
+
 .galerie {
     max-width: 300px;
     max-height: 250px;
@@ -193,6 +200,7 @@ footer a:hover {
     font-size: 50px;
     color: blueviolet;
     text-shadow: 2px 2px 1px black;
+    font-family: fantasy;
 }
 
 .concert {
@@ -245,4 +253,49 @@ footer a:hover {
 
 .concert h3{
     font-size: 20px;
+}
+/* fin page concert */
+
+/* début page réseaux sociaux */
+.titre-reseaux{
+    text-align: center;
+    font-size: 50px;
+    color: blueviolet;
+    background-color: grey;
+    font-family: fantasy;
+}
+
+.text-reseaux{
+    text-align: center;
+    font-size: 35px;
+    color: blue;
+    background-color: lightgray;
+    font-family: fantasy;
+}
+
+.grid-reseau{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.icon {
+ width: 100px;
+ margin-top: 10px;
+}
+
+.div-rs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("./img/album.jpg");
+    background-position: left;
+    height: 400px;
+    width: 150px;
+    
+}
+
+.div-rs p{
+    margin-left: 5px;
 }
