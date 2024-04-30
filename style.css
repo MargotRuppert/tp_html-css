@@ -1,19 +1,27 @@
+* {
+    margin: 0;
+    /* padding: 0; */
+    box-sizing: border-box;
+}
+
 body {
     background-image: url("./img/philippe-katerine.png");
     background-repeat: repeat;
     background-size: 75px;
     background-attachment: fixed;
 }
+
 /* NAVBAR */
 header {
     width: 100%;
-    background: rgb(0,212,255);
-    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(255,179,232,1) 50%, rgba(242,252,69,1) 100%);
+    background: rgb(0, 212, 255);
+    background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(255, 179, 232, 1) 50%, rgba(242, 252, 69, 1) 100%);
     color: aliceblue;
-    grid-template-columns: repeat(11,1fr);
+    grid-template-columns: repeat(11, 1fr);
     font-size: larger;
     font-family: fantasy;
 }
+
 .navBarList {
     display: grid;
     align-items: center;
@@ -21,55 +29,71 @@ header {
     padding-left: 50px;
     padding-right: 50px;
 }
+
 [alt="logo"] {
     height: 100px;
     width: 100px;
-   grid-column: 1;
+    grid-column: 1;
 }
+
 .Bio {
     grid-column: 2;
 }
+
 .Disco {
     grid-column: 3;
 }
+
 .Tour {
     grid-column: 4;
 }
+
 .Galerie {
     grid-column: 5;
 }
+
 .Videos {
     grid-column: 6;
 }
+
 .Merch {
     grid-column: 7;
 }
+
 .Contact {
     grid-column: 8;
 }
+
 .Blog {
     grid-column: 9;
 }
+
 .Rs {
     grid-column: 10;
 }
+
 .LivreDor {
     grid-column: 11;
 }
+
 .navBarList a {
     text-decoration: none;
 }
+
 .navBarList a:link {
     color: aliceblue;
 }
+
 .navBarList a:visited {
     color: tomato;
 }
+
 .navBarList a:hover {
     translate: 0px 3px;
     text-shadow: rgb(37, 37, 37) 3px 3px 3px;
     transition-duration: 500ms;
 }
+
 [alt="logo"]:hover {
     scale: 1.1;
 }
@@ -78,17 +102,15 @@ header {
 
 /* footer de la page */
 footer {
-    
-    background: rgb(0,212,255);
-    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(255,179,232,1) 50%, rgba(242,252,69,1) 100%);
+    background: rgb(0, 212, 255);
+    background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(255, 179, 232, 1) 50%, rgba(242, 252, 69, 1) 100%);
 }
 
 footer ul,
-p {
+footer p {
     list-style: none;
     display: flex;
     justify-content: center;
-
 }
 
 footer li {
@@ -96,7 +118,7 @@ footer li {
 }
 
 footer a,
-p {
+footer p {
     text-decoration: none;
     color: tomato;
     font-size: larger;
@@ -112,12 +134,10 @@ footer a:hover {
 /* fin footer de la page */
 
 /* Page galerie */
-
 #galerie {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
 }
 
 .galerie {
@@ -126,7 +146,6 @@ footer a:hover {
     margin: 20px;
     transition: scale 2s ease, transform 2s ease;
     box-shadow: 5px 5px 5px #333;
-
 }
 
 .galerie:hover {
@@ -137,14 +156,12 @@ footer a:hover {
 /* fin page galerie */
 
 /* page easter egg */
-
 .philippe-risoli {
     background-image: url("./img/philippe-risoli.jpeg");
     background-repeat: no-repeat;
     height: 500px;
-    background-size: contain; 
-}   
-
+    background-size: contain;
+}
 
 .philippe-head {
     width: 120px;
@@ -161,10 +178,71 @@ footer a:hover {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
-    
 }
 
 /* fin page easter egg */
+
+/* page concert et tournées */
+
+.titre-concert {
+    text-align: center;
+    font-size: 50px;
+    color: blueviolet;
+    text-shadow: 2px 2px 1px black;
+}
+
+.concert {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-concert {
+    background: rgb(0, 212, 255);
+    background: linear-gradient(90deg, rgba(0, 212, 255, 1) 0%, rgba(255, 179, 232, 1) 50%, rgba(242, 252, 69, 1) 100%);
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 10px;
+}
+
+.concert button {
+    margin: 5px;
+    padding: 8px;
+    color: blueviolet;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.concert button a {
+    text-decoration: none;
+}
+
+.concert button:hover {
+    box-shadow: 2px 2px 2px blueviolet;
+}
+
+.concert h3, .concert p{
+    padding: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.concert p{
+    color: tomato;
+    font-weight: 800;
+    font-size: larger;
+}
+
+.concert h3{
+    font-size: 20px;
+}
