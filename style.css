@@ -135,3 +135,36 @@ footer a:hover {
 }
 
 /* fin page galerie */
+
+/* page easter egg */
+
+.philippe-risoli {
+    background-image: url("./img/philippe-risoli.jpeg");
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: contain; 
+}   
+
+
+.philippe-head {
+    width: 120px;
+    position: relative;
+    margin-left: 370px;
+    margin-top: 40px;
+    animation-name: philippe;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes philippe {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
+
+/* fin page easter egg */
