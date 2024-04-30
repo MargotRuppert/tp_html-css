@@ -293,9 +293,10 @@ footer a:hover {
     background-position: left;
     height: 400px;
     width: 150px;
-    
+    box-shadow: 4px 4px 5px rgb(236, 149, 163);   
 }
 
 .div-rs p{
     margin-left: 5px;
 }
+/* fin page réseaux sociaux */
