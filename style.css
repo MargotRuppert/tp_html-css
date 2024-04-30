@@ -4,10 +4,83 @@ body {
     background-size: 75px;
     background-attachment: fixed;
 }
+/* NAVBAR */
+header {
+    width: 100%;
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(255,179,232,1) 50%, rgba(242,252,69,1) 100%);
+    color: aliceblue;
+    grid-template-columns: repeat(11,1fr);
+    font-size: larger;
+    font-family: fantasy;
+}
+.navBarList {
+    display: grid;
+    align-items: center;
+    gap: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+[alt="logo"] {
+    height: 100px;
+    width: 100px;
+   grid-column: 1;
+}
+.Bio {
+    grid-column: 2;
+}
+.Disco {
+    grid-column: 3;
+}
+.Tour {
+    grid-column: 4;
+}
+.Galerie {
+    grid-column: 5;
+}
+.Videos {
+    grid-column: 6;
+}
+.Merch {
+    grid-column: 7;
+}
+.Contact {
+    grid-column: 8;
+}
+.Blog {
+    grid-column: 9;
+}
+.Rs {
+    grid-column: 10;
+}
+.LivreDor {
+    grid-column: 11;
+}
+.navBarList a {
+    text-decoration: none;
+}
+.navBarList a:link {
+    color: aliceblue;
+}
+.navBarList a:visited {
+    color: tomato;
+}
+.navBarList a:hover {
+    translate: 0px 3px;
+    text-shadow: rgb(37, 37, 37) 3px 3px 3px;
+    transition-duration: 500ms;
+}
+[alt="logo"]:hover {
+    scale: 1.1;
+}
+
+/* FIN CSS NAVBAR */
 
 /* footer de la page */
 footer {
-    background-color: lightpink;
+    
+    background: rgb(0,212,255);
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(255,179,232,1) 50%, rgba(242,252,69,1) 100%);
 }
 
 footer ul,
@@ -25,12 +98,15 @@ footer li {
 footer a,
 p {
     text-decoration: none;
-    color: #333;
+    color: tomato;
+    font-size: larger;
+    font-family: fantasy;
 }
 
 footer a:hover {
-    color: black;
-    text-shadow: 2px 2px 5px;
+    translate: 0px 3px;
+    text-shadow: rgb(37, 37, 37) 3px 3px 3px;
+    transition-duration: 500ms;
 }
 
 /* fin footer de la page */
