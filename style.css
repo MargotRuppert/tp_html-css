@@ -261,15 +261,14 @@ footer a:hover {
     text-align: center;
     font-size: 50px;
     color: blueviolet;
-    background-color: grey;
     font-family: fantasy;
 }
 
 .text-reseaux{
     text-align: center;
     font-size: 35px;
-    color: blue;
-    background-color: lightgray;
+    color: blueviolet;
+
     font-family: fantasy;
 }
 
